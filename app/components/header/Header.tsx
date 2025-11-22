@@ -1,7 +1,7 @@
 import { navbarLinks } from "../../data/dataNavbar";
 import { Link } from "react-router";
 import { useState } from "react";
-import NavbarMobile from "./navbarMobile";
+import NavbarMobile from "./NavbarMobile";
 
 
 

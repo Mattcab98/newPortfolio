@@ -4,8 +4,6 @@ import { Turn as Hamburger } from "hamburger-react";
 import { navbarLinks } from "../../data/dataNavbar";
 
 // icons
-import { CiSearch } from "react-icons/ci";
-import { PiShoppingCartThin } from "react-icons/pi";
 
 export default function NavbarMobile() {
 
