@@ -5,6 +5,8 @@
 :root {
   --color-txt-primary: #ffffff;
   --bg-primary: #121212;
+
+  color: var(--color-txt-primary);
 }
 
 /* Tus utilidades personalizadas */
