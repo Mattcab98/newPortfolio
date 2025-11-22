@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Variables */
+:root {
+  --color-txt-primary: #ffffff;
+  --bg-primary: #121212;
+}
+
+/* Tus utilidades personalizadas */
+@layer utilities {
+  .text-colorPrimary { 
+    color: var(--color-txt-primary);
+  }
+
+  .bg-primary { 
+    background-color: var(--bg-primary);
+  }
+}
