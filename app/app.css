@@ -4,7 +4,7 @@
 /* Variables */
 :root {
   --color-txt-primary: #ffffff;
-  --bg-primary: #121212;
+  --bg-primary: #000000;
 
   color: var(--color-txt-primary);
   background-color: var(--bg-primary);
