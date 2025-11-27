@@ -1,15 +1,14 @@
-import SKills from "~/components/skills/Skills";
 import "../app.css";
-import Header from "../components/header/Header";
+import Skills from "~/components/skills/Skills";
 import Hero from '../components/hero/Hero'
+import Proyects from "../components/proyects/Proyects";
 
 export default function Home() {
   return (
     <>
-        <div>
-          <Hero/>
-          <SKills/>
-        </div>
+      <Hero />
+      <Skills />
+      <Proyects />
     </>
   );
 }

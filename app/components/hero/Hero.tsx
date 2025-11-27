@@ -11,7 +11,7 @@ export default function Hero() {
                 <button className="outline-1 outline-gray-400 w-11/12 rounded-xl p-3 text-colorPrimary hover:bg-gray-800 active:bg-gray-800 mx-auto block">Ver proyectos</button>
             </div>
 
-        </section>/
+        </section>
     </>
   );
 }

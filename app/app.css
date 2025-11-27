@@ -7,6 +7,7 @@
   --bg-primary: #121212;
 
   color: var(--color-txt-primary);
+  background-color: var(--bg-primary);
 }
 
 /* Tus utilidades personalizadas */
