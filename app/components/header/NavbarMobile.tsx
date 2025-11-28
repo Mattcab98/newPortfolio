@@ -10,10 +10,10 @@ export default function NavbarMobile() {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="lg:hidden text-black">
+        <div className="lg:hidden">
 
             {/* hamburger icon section */}
-            <div className="relative z-100 text-colorPrimary">
+            <div className="fixed top-6 right-4 z-100 text-colorPrimary">
                 <Hamburger
                     toggled={open}
                     toggle={setOpen}
@@ -23,7 +23,15 @@ export default function NavbarMobile() {
             </div>
 
             {/* mobile menu section */}
-            <div className={`${open ? 'flex flex-col' : 'hidden'} bg-primary z-10 fixed top-0 right-0 w-[200px] h-screen items-center justify-center`}>
+            <div className={`
+                ${open ? 'flex' : 'hidden'}
+                flex-col
+                bg-primary
+                fixed inset-0
+                z-50
+                items-center
+                justify-center`}
+            >
 
                 {/* menu links section */}
                 <ul className="flex flex-col w-ful justify-center items-center">
@@ -41,39 +49,12 @@ export default function NavbarMobile() {
 
                 </ul>
 
-                {/* icons section */}
+                {/* icons login mobile */}
                 <div className="flex justify-center gap-4 w-full absolute bottom-6">
 
-<button
-  className="
-    relative 
-    w-[90%]
-    p-1.5 
-    rounded-md
-    overflow-hidden
-    text-colorPrimary
-    bg-blue-950
-    transition-colors duration-300
-
-    before:absolute 
-    before:inset-0
-    before:bg-blue-900 
-    before:content-['']
-    before:scale-x-0
-    before:origin-left
-    before:transition-transform 
-    before:duration-500
-    before:z-0
-
-    hover:before:scale-x-100
-    hover:text-white
-  "
->
-  <span className="relative z-10">Login</span>
-</button>
-
-
-
+                    <button className="w-[80%] bg-blue-950 text-colorPrimary hover:bg-blue-900 hover:text-white active:bg-blue-900 transition-colors duration-300 rounded-md p-1.5">
+                        <span className="relative z-10">Login</span>
+                    </button>
 
                 </div>
 

@@ -2,6 +2,7 @@ import { Links, Meta, Outlet, Scripts } from "react-router";
 import Header from './components/header/Header'
  
 import "./app.css";
+import Footer from "./components/footer/Footer";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -60,8 +61,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return <>
     <Header />
-
     <Outlet />
+    <Footer/>
 
   </>
 }
