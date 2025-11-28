@@ -14,9 +14,20 @@ const stackTech = [
   { id: 'tailwind', label: 'Tailwind' },
 ];
 
+const [showOverlay, setShowOverlay] = useState(false);
+
+const handleTouch = () => {
+  setShowOverlay(false); }, 3000)
+};
+
+setTimeout (()=> {
+  setShowOverlay(false);}, 
+}
+)
+
 export default function CardProyect({ imgProyect, title, description, tecnologias, link }: CardProps) {
   return (
-    <div className="relative group w-full max-w-[250px]">
+    <div className ="relative group w-full max-w-[250px] onTouchStart={handleTouch}">
       <div
         className="
           flex flex-col bg-gray-900 rounded-2xl
