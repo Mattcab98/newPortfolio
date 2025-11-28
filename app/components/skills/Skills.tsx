@@ -2,7 +2,9 @@ export default function SKills () {
     return (
         <>
         
-            <section className="px-5 flex flex-col gap-4 bg-gray-900 py-8">
+            <section className="px-5 flex flex-col gap-4 
+                                bg-gray-900 py-8
+                                md:flex-row md:gap-30">
 
                 <div className="skill flex flex-col gap-2">
                     <span className="text-xs text-gray-500">FRONTEND</span>

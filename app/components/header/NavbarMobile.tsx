@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { Turn as Hamburger } from "hamburger-react";
 import { navbarLinks } from "../../data/dataNavbar";
@@ -9,11 +9,19 @@ export default function NavbarMobile() {
 
     const [open, setOpen] = useState(false);
 
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }) 
+
     return (
         <div className="lg:hidden">
 
             {/* hamburger icon section */}
-            <div className="fixed top-6 right-4 z-100 text-colorPrimary">
+            <div className="relative z-100 text-colorPrimary">
                 <Hamburger
                     toggled={open}
                     toggle={setOpen}

@@ -8,12 +8,28 @@ import ArrowDown from "~/components/utils/ArrowDown";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Skills />
-      <Proyects />
-      <Contact />
+      <div className="">
 
-      <ArrowDown />
+        <div className="w-[90%] mx-auto">
+          <Hero />
+        </div>
+
+        <div className="w-full bg-gray-900">
+          <div className="w-[90%] mx-auto">
+            <Skills />
+          </div>
+        </div>
+
+        <div className="w-[90%] mx-auto =">
+          <Proyects />
+        </div>
+
+        <div className="w-[90%] mx-auto">
+          <Contact />
+        </div>
+
+        <ArrowDown />
+      </div>
     </>
   );
 }

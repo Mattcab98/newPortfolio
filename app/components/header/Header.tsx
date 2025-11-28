@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="bg-primary w-full h-auto">
+            <header className="bg-primary w-full h-auto fixed top-0 z-50 shadow-md">
                 <nav className="w-full h-24 mx-auto flex justify-between items-center border-b border-gray-900 px-4">
 
                     {/* logo section */}
