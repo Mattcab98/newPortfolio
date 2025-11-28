@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 type CardProps = {
   imgProyect: string;
   title: string;
@@ -14,29 +16,28 @@ const stackTech = [
   { id: 'tailwind', label: 'Tailwind' },
 ];
 
-const [showOverlay, setShowOverlay] = useState(false);
-
-const handleTouch = () => {
-  setShowOverlay(false); }, 3000)
-};
-
-setTimeout (()=> {
-  setShowOverlay(false);}, 
-}
-)
-
 export default function CardProyect({ imgProyect, title, description, tecnologias, link }: CardProps) {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  const handleTouch = () => {
+    setShowOverlay(true);
+    setTimeout(() => setShowOverlay(false), 3000);
+  };
+
   return (
-    <div className ="relative group w-full max-w-[250px] onTouchStart={handleTouch}">
+    <div className={`
+    relative group w-full max-w-[250px] transform transition-transform duration-300
+    ${showOverlay ? '-rotate-1' : 'group-hover:-rotate-1'}
+  `} onTouchStart={handleTouch}>
+      {/* Card */}
       <div
-        className="
+        className={`
           flex flex-col bg-gray-900 rounded-2xl
           outline-1 outline-gray-900 shadow-2xl shadow-blue-950
           min-h-[250px] h-auto overflow-hidden
-          transition duration-300
-          group-hover:opacity-40 group-focus:opacity-40 group-active:opacity-40
-          group-hover:blur-[1px] group-focus:blur-[1px] group-active:blur-[1px]
-        "
+          transition-all duration-300
+          ${showOverlay ? 'opacity-40 blur-[1px]' : 'group-hover:opacity-40 group-hover:blur-[1px]'}
+        `}
         tabIndex={-1}
       >
         <div className="w-full h-[120px]">
@@ -66,22 +67,22 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
         </div>
       </div>
 
+      {/* Botón overlay absoluto */}
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="
-          pointer-events-none /* el contenedor no recibe clicks; el botón sí */
-          opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100
-          transition-opacity duration-300
+        className={`
           absolute inset-0 flex items-center justify-center
-        "
+          transition-opacity duration-300
+          ${showOverlay ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto'}
+        `}
       >
         <button
           className="
             pointer-events-auto
-            w-11/12 rounded-xl p-3 text-colorPrimary 
-            bg-gray-900/80 backdrop-blur-sm outline-1 outline-gray-400
+            w-8/12 text-xs rounded-xl p-3 text-colorPrimary 
+            bg-gray-900/80 backdrop-blur-sm outline-1 outline-gray-800
             hover:bg-gray-800 active:bg-gray-800
           "
         >
