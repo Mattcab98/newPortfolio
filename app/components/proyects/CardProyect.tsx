@@ -1,39 +1,82 @@
 type CardProps = {
-    imgProyect: string;
-    title: string;
-    description: string;
-    tecnologias: string[];
-}
+  imgProyect: string;
+  title: string;
+  description: string;
+  tecnologias: string[];
+  link: string;
+};
 
 const stackTech = [
-    {id: 'react', label: 'React.js'},
-    {id: 'js', label: 'JavaScripts'},
-    {id: 'node', label: 'Node.js'},
-    {id: 'css', label: 'CSS3'},
-    {id: 'tailwind', label: 'Tailwind'},
-]
+  { id: 'react', label: 'React.js' },
+  { id: 'js', label: 'JavaScripts' },
+  { id: 'node', label: 'Node.js' },
+  { id: 'css', label: 'CSS3' },
+  { id: 'tailwind', label: 'Tailwind' },
+];
 
-export default function CardProyect ({imgProyect, title, description, tecnologias}: CardProps) {
-    return (
-        <>
-            <div className="container__card bg-gray-900 w-[250px] h-[250px] rounded-2xl border-2 border-transparent hover:border-blue-950 transition-border duracion-1000">
-                <div className="container__img w-full h-[120px]">
-                    <img src={imgProyect} alt="" className="w-full h-full 
-                    rounded-t-2xl object-cover filter brightness-50 active:brightness-100 hover:brightness-100 transition duration-300"/>
-                </div>
-                <div className="container__txt flex flex-col flex-1 justify-center aling-center  text-center">
-                    <h3 className="text-sm">{title}</h3>
-                    <p className="text-xs">{description}</p>
-                    <ul className="container__tecnologias flex justify-center gap-5">
-                        {stackTech
-                            .filter(t => tecnologias.includes(t.id))
-                            .map(t => (
-                                <li key={t.id} className="text-[.5rem] p-1 rounded bg-red-600">{t.label}</li>
-                            ))
-                        }
-                    </ul>
-                </div>
-            </div>
-        </>
-    )
+export default function CardProyect({ imgProyect, title, description, tecnologias, link }: CardProps) {
+  return (
+    <div className="relative group w-full max-w-[250px]">
+      <div
+        className="
+          flex flex-col bg-gray-900 rounded-2xl
+          outline-1 outline-gray-900 shadow-2xl shadow-blue-950
+          min-h-[250px] h-auto overflow-hidden
+          transition duration-300
+          group-hover:opacity-40 group-focus:opacity-40 group-active:opacity-40
+          group-hover:blur-[1px] group-focus:blur-[1px] group-active:blur-[1px]
+        "
+        tabIndex={-1}
+      >
+        <div className="w-full h-[120px]">
+          <img
+            src={imgProyect}
+            alt={title}
+            className="
+              w-full h-full object-cover rounded-t-2xl
+              brightness-50 transition group-hover:brightness-75
+            "
+          />
+        </div>
+
+        <div className="flex flex-col items-start justify-evenly flex-1 p-4 rounded-b-2xl">
+          <h3 className="text-sm">{title}</h3>
+          <p className="text-xs">{description}</p>
+
+          <ul className="flex flex-wrap justify-start gap-2 w-full mt-2">
+            {stackTech
+              .filter(t => tecnologias.includes(t.id))
+              .map(t => (
+                <li key={t.id} className="text-[.6rem] p-1 rounded bg-blue-950">
+                  {t.label}
+                </li>
+              ))}
+          </ul>
+        </div>
+      </div>
+
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          pointer-events-none /* el contenedor no recibe clicks; el botón sí */
+          opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100
+          transition-opacity duration-300
+          absolute inset-0 flex items-center justify-center
+        "
+      >
+        <button
+          className="
+            pointer-events-auto
+            w-11/12 rounded-xl p-3 text-colorPrimary 
+            bg-gray-900/80 backdrop-blur-sm outline-1 outline-gray-400
+            hover:bg-gray-800 active:bg-gray-800
+          "
+        >
+          Ver proyecto
+        </button>
+      </a>
+    </div>
+  );
 }

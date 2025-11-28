@@ -3,14 +3,6 @@ import { Link } from "react-router";
 import { useState } from "react";
 import NavbarMobile from "./NavbarMobile";
 
-
-
-
-//icons
-import { FaDumbbell } from 'react-icons/fa';
-import { CiSearch } from 'react-icons/ci';
-import { PiShoppingCartThin } from 'react-icons/pi';
-
 export default function Header() {
 
     const [open, setOpen] = useState(false);
@@ -18,11 +10,11 @@ export default function Header() {
     return (
         <>
             <header className="bg-primary w-full h-auto">
-                <nav className="w-[90%] h-24 mx-auto flex justify-between items-center ">
+                <nav className="w-full h-24 mx-auto flex justify-between items-center border-b border-gray-900 px-4">
 
                     {/* logo section */}
                     <div className="text-colorPrimary flex items-center">
-                        <img src="/logoMat.png" alt="" />
+                        <img src="/logoMat.png" alt="" className="scale-90"/>
                     </div>
 
                     {/* menu section desktop*/}
