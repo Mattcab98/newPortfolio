@@ -13,7 +13,7 @@ export default function Footer() {
                     <Link
                         to={link.link}
                         key={link.id}
-                        className="text-colorPrimary inline-block py-2 px-3 hover:text-blue-950 active:text-blue-950 transition-colors duration-400 text-xs"
+                        className="text-colorPrimary inline-block py-2 px-3 hover:text-blue-950 active:text-blue-950 transition-colors duration-400 text-xs md:text-sm lg:text-lg"
                     >
                         {link.title}
                     </Link>
@@ -26,7 +26,7 @@ export default function Footer() {
                 © Todos los derechos reservados.
             </div>
 
-            <div className="container__icon flex justify-center gap-5 text-2xl text-blue-900">
+            <div className="container__icon flex justify-center gap-5 text-xl lg:text-3xl text-blue-900">
 
                 <div className='hover:text-gray-100 active:text-gray-100'>
                     <a href="https://github.com/Mattcab98" target='_blank' rel="noopener noreferrer">

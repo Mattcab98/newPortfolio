@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-[90%] mx-auto =">
+        <div className="w-[90%] mx-auto">
           <Proyects />
         </div>
 

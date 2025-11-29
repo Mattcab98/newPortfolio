@@ -37,10 +37,11 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
           min-h-[250px] h-auto overflow-hidden
           transition-all duration-300
           ${showOverlay ? 'opacity-40 blur-[1px]' : 'group-hover:opacity-40 group-hover:blur-[1px]'}
-        `}
+          `
+        }
         tabIndex={-1}
       >
-        <div className="w-full h-[120px]">
+        <div className="w-full h-[150px] lg:h-[200px] lg:max-h-[200px]">
           <img
             src={imgProyect}
             alt={title}
@@ -51,15 +52,15 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
           />
         </div>
 
-        <div className="flex flex-col items-start justify-evenly flex-1 p-4 rounded-b-2xl">
-          <h3 className="text-sm">{title}</h3>
-          <p className="text-xs">{description}</p>
+        <div className="flex flex-col text-center justify-evenly flex-1 p-4 rounded-b-2xl gap-3">
+          <h3 className="text-base lg:text-lg">{title}</h3>
+          <p className="text-xs lg:text-sm">{description}</p>
 
-          <ul className="flex flex-wrap justify-start gap-2 w-full mt-2">
+          <ul className="flex flex-wrap justify-center gap-2 w-full">
             {stackTech
               .filter(t => tecnologias.includes(t.id))
               .map(t => (
-                <li key={t.id} className="text-[.6rem] p-1 rounded bg-blue-950">
+                <li key={t.id} className="text-xs lg:text-sm p-1 rounded bg-blue-950">
                   {t.label}
                 </li>
               ))}

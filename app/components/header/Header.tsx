@@ -9,8 +9,8 @@ export default function Header() {
 
     return (
         <>
-            <header className="bg-primary w-full h-auto fixed top-0 z-50 shadow-md">
-                <nav className="w-full h-24 mx-auto flex justify-between items-center border-b border-gray-900 px-4">
+            <header className="w-full bg-primary fixed top-0 h-auto z-50 shadow-md">
+                <nav className="w-[90%] h-24 mx-auto flex justify-between items-center border-b border-gray-900 px-4 z-50">
 
                     {/* logo section */}
                     <div className="text-colorPrimary flex items-center">

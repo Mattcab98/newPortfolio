@@ -13,7 +13,9 @@ export default function ArrowDown() {
                 text-xs
                 grid place-content-center
                 animate-bounce opacity-30 transition-opacity duration-2000
-                fixed bottom-45 right-2"
+                fixed bottom-45 right-2
+                md:hidden"
+                
             >
                 <HiOutlineChevronDoubleDown />
             </div>
