@@ -3,7 +3,9 @@ import Skills from "~/components/skills/Skills";
 import Hero from '../components/hero/Hero'
 import Proyects from "../components/proyects/Proyects";
 import Contact from "~/components/contact/Contact";
+import Serv from '../components/services/Serv'
 import ArrowDown from "~/components/utils/ArrowDown";
+
 
 export default function Home() {
   return (
@@ -18,6 +20,10 @@ export default function Home() {
           <div className="w-[90%] mx-auto">
             <Skills />
           </div>
+        </div>
+
+        <div className="w-[90%] mx-auto">
+          <Serv/>
         </div>
 
         <div className="w-[90%] mx-auto">

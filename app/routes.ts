@@ -6,5 +6,6 @@ export default [
     route('nosotros', 'routes/About.tsx'),
     route('proyects', 'routes/ProyectsAll.tsx'),
     route('contacto', 'routes/ContactForm.tsx'),
+    route('servicios', 'routes/Service.tsx'),
 
 ] satisfies RouteConfig;
