@@ -73,7 +73,7 @@ export default function Proyects() {
           </div>
 
           <Link
-            to='proyectos'
+            to='proyects'
             className="
               w-full mx-auto max-w-[600px]
               text-center p-3 rounded-xl

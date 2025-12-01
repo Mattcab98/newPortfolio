@@ -9,13 +9,13 @@ export default function Header() {
 
     return (
         <>
-            <header className="w-full bg-primary fixed top-0 h-auto z-50 shadow-md">
+            <header className="w-full bg-primary sticky top-0 h-auto z-50 shadow-md">
                 <nav className="w-[90%] h-24 mx-auto flex justify-between items-center border-b border-gray-900 px-4 z-50">
 
                     {/* logo section */}
-                    <div className="text-colorPrimary flex items-center">
+                    <Link to='/' className="text-colorPrimary flex items-center">
                         <img src="/logoMat.png" alt="" className="scale-90"/>
-                    </div>
+                    </Link>
 
                     {/* menu section desktop*/}
                     <ul className="hidden lg:flex items-center">

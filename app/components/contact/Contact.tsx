@@ -13,7 +13,7 @@ export default function Contact() {
                     hazlo realidad con soluciones digitales efectivas.
                 </p>
                 <Link
-                    to='proyectos'
+                    to='contacto'
                     className="
                         w-full max-w-[600px]
                         mx-auto p-3 rounded-xl

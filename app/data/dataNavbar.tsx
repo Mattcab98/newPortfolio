@@ -16,13 +16,18 @@ export const navbarLinks: NavbarLink[] = [
     link: "/nosotros",
   },
   {
-    id: 3,
-    title: "Contacto",
-    link: "/contacto",
-  },
-  {
     id: 4,
     title: "Servicios",
     link: "/servicios",
+  },
+  {
+    id: 5,
+    title: "Proyectos",
+    link: "/proyects",
+  },
+  {
+    id: 3,
+    title: "Contacto",
+    link: "/contacto",
   },
 ];
