@@ -1,6 +1,6 @@
 import CardServ from "../components/services/CardServ";
 import { aboutValues } from "../data/dataAbout";
-import CardPersonal from "../components/utils/cardPersonal";
+import CardPersonal from "../components/utils/CardPersonal";
 import ArrowDown from "~/components/utils/ArrowDown";
 
 export default function About() {
