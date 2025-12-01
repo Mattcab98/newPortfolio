@@ -1,5 +1,7 @@
 import CardServ from "../components/services/CardServ";
 import { aboutValues } from "../data/dataAbout";
+import CardPersonal from "../components/utils/cardPersonal";
+import ArrowDown from "~/components/utils/ArrowDown";
 
 export default function About() {
     return (
@@ -22,7 +24,7 @@ export default function About() {
                 </p>
 
                 {/* GRID DE VALORES */}
-                <div className="w-[90%] mx-auto scale-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+                <div className="w-[90%] mx-auto scale-100 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-2">
                     {aboutValues.map((item, index) => (
                         <CardServ
                             key={index}
@@ -33,7 +35,26 @@ export default function About() {
                     ))}
                 </div>
 
+
             </div>
+
+            <div className="w-full bg-gray-900 overflow-x-auto flex snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+                
+                <div className="flex-none w-full md:w-1/2 lg:w-1/3 snap-center">
+                    <CardPersonal />
+                </div>
+                
+                <div className="flex-none w-full md:w-1/2 lg:w-1/3 snap-center">
+                    <CardPersonal />
+                </div>
+                
+                <div className="flex-none w-full md:w-1/2 lg:w-1/3 snap-center">
+                    <CardPersonal />
+                </div>
+
+            </div>
+
+
         </>
     );
 }
