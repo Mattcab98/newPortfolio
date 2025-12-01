@@ -12,13 +12,13 @@ export default function Proyects() {
 
           <div className="container__txt text-center ">
 
-            <span className="text-gray-400 md:text-lg lg:text-3xl">Algunos de nuestros trabajos</span>
+            <span className=" text-xl lg:text-3xl">Algunos de nuestros trabajos</span>
 
           </div>
 
           <div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center items-start">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-x-3 gap-y-10 justify-items-center items-start">
 
               <CardProyect
                 imgProyect="/siteVicArroche.png"
