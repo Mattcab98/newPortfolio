@@ -3,7 +3,7 @@ export default function SKills () {
         <>
         
             <section className=" flex flex-col gap-4 
-                                bg-gray-900 py-8
+                                bg-gray-900 py-10
                                 md:flex-row md:gap-30 lg:py-20"
             >
 

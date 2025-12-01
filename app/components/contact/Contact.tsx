@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export default function Contact() {
     return (
         <>
-            <hr className="border-gray-700 border-t-[0.5px] mb-5" />
+            <hr className="border-gray-700 border-t-[0.5px] my-10" />
 
             <div className="flex flex-col h-70 justify-center items-center lg:p-40 text-center gap-6 w-full">
 
@@ -25,7 +25,7 @@ export default function Contact() {
 
             </div>
 
-            <hr className="border-gray-700 border-t-[0.5px] mt-5" />
+            <hr className="border-gray-700 border-t-[0.5px] my-10" />
         </>
     )
 }

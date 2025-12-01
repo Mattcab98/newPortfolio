@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <>
       <section className="container__hero">
-        <div className="flex flex-col gap-5 w-full p-5 bg-primaryColor">
+        <div className="flex flex-col gap-5 w-full py-10 bg-primaryColor">
 
           <span className="text-xs md:text-lg text-gray-400">Bienvenido</span>
 

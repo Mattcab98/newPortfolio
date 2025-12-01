@@ -6,7 +6,7 @@ export default function Proyects() {
     <>
 
 
-      <div className="py-15">
+      <div className="">
 
         <div className="bg-gray-850 w-full flex flex-col gap-10">
 

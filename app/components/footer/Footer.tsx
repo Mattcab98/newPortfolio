@@ -6,9 +6,9 @@ import { Link } from "react-router";
 
 export default function Footer() {
     return (
-        <footer className="w-full flex flex-col gap-5 py-6 text-center text-sm text-gray-600">
+        <footer className="w-full flex flex-col gap-5 pb-10 text-center text-sm text-gray-600">
 
-            <ul className="flex justify-center">
+            <ul className="flex justify-cente flex-col md:flex-row justify-center">
                 {navbarLinks.map((link) => (
                     <Link
                         to={link.link}
