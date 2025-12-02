@@ -6,6 +6,8 @@ import Contact from "~/components/contact/Contact";
 import Serv from '../components/services/Serv'
 import ArrowDown from "~/components/utils/ArrowDown";
 
+import { motion } from 'framer-motion';
+
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="w-[90%] mx-auto">
-          <Serv/>
+            <Serv/>
         </div>
 
         <div className="w-[90%] mx-auto">

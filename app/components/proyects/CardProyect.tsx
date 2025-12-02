@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion'
+
 
 type CardProps = {
   imgProyect: string;
@@ -29,8 +31,10 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
     relative group w-full max-w-[250px] transform transition-transform duration-300
     ${showOverlay ? '-rotate-1' : 'group-hover:-rotate-1'}
   `} onTouchStart={handleTouch}>
+      
       {/* Card */}
-      <div
+
+      <motion.div
         className={`
           flex flex-col bg-gray-900 rounded-2xl
           outline-1 outline-gray-900 shadow-2xl shadow-blue-950
@@ -39,9 +43,13 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
           ${showOverlay ? 'opacity-40 blur-[1px]' : 'group-hover:opacity-40 group-hover:blur-[1px]'}
           `
         }
-        tabIndex={-1}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7, ease: 'easeIn' }}
+        viewport={{ once: true, }}
       >
-        <div className="w-full h-[150px] lg:h-[200px] lg:max-h-[200px]">
+        <div className="w-full h-[150px] lg:h-[200px] lg:max-h-[200px]"
+          tabIndex={-1}>
           <img
             src={imgProyect}
             alt={title}
@@ -66,7 +74,7 @@ export default function CardProyect({ imgProyect, title, description, tecnologia
               ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
 
       {/* Botón overlay absoluto */}
       <a
