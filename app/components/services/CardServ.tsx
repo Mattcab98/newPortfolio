@@ -9,7 +9,7 @@ interface CardServProps {
 
 export default function CardServ({ icon: Icon, title, description }: CardServProps) {
   return (
-    <motion.div className="md:w-70 lg:w-55 lg:h-60 bg-card-services flex flex-col gap-3 p-8 rounded-xl shadow-lg shadow-blue-950/50"
+    <motion.div className="md:w-100 lg:w-70 lg:h-70 bg-card-services flex flex-col gap-3 p-8 rounded-xl shadow-lg shadow-blue-950/50"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, ease: 'easeOut' }}

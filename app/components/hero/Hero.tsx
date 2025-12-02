@@ -12,8 +12,8 @@ export default function Hero() {
             Web que crece con tu negocio
           </h1>
 
-          <h2 className="text-base text-colorPrimary text-center md:w-[70%] md:mx-auto lg:text-2xl lg:w-[50%]">
-            En <span className="text-xl text-blue-800">mat.</span> transformamos ideas en soluciones digitales completas, optimizadas y listas para potenciar tu presencia en internet
+          <h2 className="text-base text-colorPrimary text-center md:w-[70%] md:mx-auto lg:text-2xl lg:w-[80%]">
+            En <span className="text-xl lg:text-2xl text-blue-800">mat.</span> transformamos ideas en soluciones digitales completas, optimizadas y listas para potenciar tu presencia en internet
           </h2>
 
           <div className="container_buttonHero grid grid-cols-1 grid-rows-2 lg:flex gap-3 w-full place-content-center py-5 lg:py-8">

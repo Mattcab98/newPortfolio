@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 export default function Contact() {
     return (
         <>
-            <hr className="border-gray-700 border-t-[0.5px] my-10" />
+            <hr className="border-gray-700 border-t-[0.5px] my-15" />
 
-            <div className="flex flex-col h-70 justify-center items-center lg:p-40 text-center gap-6 w-full">
+            <div className="flex flex-col h-70 justify-center items-center lg:p-40 text-center gap-6 w-full mb-15">
 
                 <motion.h2 className="text-2xl md:text-3xl"
                     initial={{ opacity: 0 }}
@@ -34,8 +34,6 @@ export default function Contact() {
                 </Link>
 
             </div>
-
-            <hr className="border-gray-700 border-t-[0.5px] my-10" />
         </>
     )
 }

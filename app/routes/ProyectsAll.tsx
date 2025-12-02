@@ -36,6 +36,24 @@ export default function ProyectsAll() {
                         title='proyecto x'
                         description='este es un ejemplo de un proyecto creado para una empresa de venta de comida' tecnologias={['react', 'javascript', 'tailwind', 'node']}
                         link='' />
+
+                    <CardProyect
+                        imgProyect='siteVicArroche.png'
+                        title='proyecto x'
+                        description='este es un ejemplo de un proyecto creado para una empresa de venta de comida' tecnologias={['react', 'javascript', 'tailwind', 'node']}
+                        link='' />
+
+                    <CardProyect
+                        imgProyect='siteVicArroche.png'
+                        title='proyecto x'
+                        description='este es un ejemplo de un proyecto creado para una empresa de venta de comida' tecnologias={['react', 'javascript', 'tailwind', 'node']}
+                        link='' />
+                        
+                    <CardProyect
+                        imgProyect='siteVicArroche.png'
+                        title='proyecto x'
+                        description='este es un ejemplo de un proyecto creado para una empresa de venta de comida' tecnologias={['react', 'javascript', 'tailwind', 'node']}
+                        link='' />
                 </div>
 
 

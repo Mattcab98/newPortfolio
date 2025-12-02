@@ -44,30 +44,6 @@ export default function Proyects() {
                 link="https://victoria-arroche.vercel.app/"
               />
 
-              <CardProyect
-                imgProyect="/siteVicArroche.png"
-                title="Porfolio Profesional Fotografia"
-                description="Este es un proyecto de ejemplo que muestra las capacidades de React."
-                tecnologias={['react', 'tailwind', 'node']}
-                link="https://victoria-arroche.vercel.app/"
-              />
-
-              <CardProyect
-                imgProyect="/siteVicArroche.png"
-                title="Porfolio Profesional Fotografia"
-                description="Este es un proyecto de ejemplo que muestra las capacidades de React."
-                tecnologias={['react', 'tailwind', 'node']}
-                link="https://victoria-arroche.vercel.app/"
-              />
-
-              <CardProyect
-                imgProyect="/siteVicArroche.png"
-                title="Porfolio Profesional Fotografia"
-                description="Este es un proyecto de ejemplo que muestra las capacidades de React."
-                tecnologias={['react', 'tailwind', 'node']}
-                link="https://victoria-arroche.vercel.app/"
-              />
-
             </div>
 
           </div>
