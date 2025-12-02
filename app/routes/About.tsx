@@ -6,7 +6,9 @@ import ArrowDown from "~/components/utils/ArrowDown";
 export default function About() {
     return (
         <>
-            <div className="pt-8 pb-25 w-[90%] mx-auto flex flex-col gap-10">
+            <div className="flex flex-col gap-10 pt-10 pb-15">
+
+                <div className="w-[90%] mx-auto flex flex-col gap-10">
 
                 <div className="text-white w-full flex flex-col gap-5">
                     <h2 className="text-3xl">Quiénes Somos</h2>
@@ -38,7 +40,7 @@ export default function About() {
 
             </div>
 
-            <div className="w-full bg-gray-900 overflow-x-auto flex snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900">
+            <div className="w-full bg-gray-900 overflow-x-auto flex snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 py-15">
                 
                 <div className="flex-none w-full md:w-1/2 lg:w-1/3 snap-center">
                     <CardPersonal />
@@ -55,6 +57,8 @@ export default function About() {
             </div>
 
 
+
+            </div>
         </>
     );
 }

@@ -1,7 +1,7 @@
 export default function CardPersonal() {
     return (
         <>
-            <div className="w-[90%] mx-auto py-10">
+            <div className="w-[90%] mx-auto">
                 <div className="flex flex-col items-center text-center">
                     <div className="w-30 h-30 bg-gray-950 rounded-full grid place-content-center">
                         <img className="scale-80 rounded-full" src="/logoMat.png" alt="" />
