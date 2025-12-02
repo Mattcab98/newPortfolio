@@ -16,7 +16,7 @@ export default function Hero() {
             En <span className="text-xl text-blue-800">mat.</span> transformamos ideas en soluciones digitales completas, optimizadas y listas para potenciar tu presencia en internet
           </h2>
 
-          <div className="container_buttonHero grid grid-cols-1 grid-rows-2 lg:flex gap-3 w-full place-content-center">
+          <div className="container_buttonHero grid grid-cols-1 grid-rows-2 lg:flex gap-3 w-full place-content-center py-5 lg:py-8">
 
             <Link to='/contacto' className="
                 w-full
@@ -42,8 +42,6 @@ export default function Hero() {
             </Link>
 
           </div>
-
-
 
         </div>
       </section>

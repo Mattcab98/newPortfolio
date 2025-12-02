@@ -6,21 +6,21 @@ import { Link } from "react-router";
 
 export default function Footer() {
     return (
-        <footer className="w-full flex flex-col gap-5 pb-10 text-center text-sm text-gray-600">
+        <footer className="w-full flex flex-col gap-5 pb-10 text-center text-sm text-gray-600 bg-gray-900/50">
 
-            <ul className="flex justify-cente flex-col md:flex-row justify-center">
+            <ul className="flex justify-cente flex-col gap-2 md:gap-10 md:flex-row justify-center pt-10">
                 {navbarLinks.map((link) => (
                     <Link
                         to={link.link}
                         key={link.id}
-                        className="text-colorPrimary inline-block py-2 px-3 hover:text-blue-950 active:text-blue-950 transition-colors duration-400 text-xs md:text-sm lg:text-lg"
+                        className="text-colorPrimary hover:text-blue-950 active:text-blue-950 transition-colors duration-400 text-sm lg:text-lg"
                     >
                         {link.title}
                     </Link>
                 ))}
             </ul>
 
-            <div className="container__txtDerechos">
+            <div className="container__txtDerechos text-xs">
                 <span className="text-xl text-blue-900">mat. </span>
                 {new Date().getFullYear()}
                 © Todos los derechos reservados.

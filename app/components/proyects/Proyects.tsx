@@ -6,9 +6,9 @@ export default function Proyects() {
     <>
 
 
-      <div className="">
+      <div className="md:pb-10">
 
-        <div className="bg-gray-850 w-full flex flex-col gap-10">
+        <div className="bg-gray-850 w-full flex flex-col gap-10 md:gap-20">
 
           <div className="container__txt text-center ">
 

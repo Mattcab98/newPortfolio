@@ -4,7 +4,7 @@ export default function SKills () {
         
             <section className=" flex flex-col gap-4 
                                 bg-gray-900 py-10
-                                md:flex-row md:gap-30 lg:py-20"
+                                md:flex-row md:gap-30 lg:py-25"
             >
 
                 <div className="skill flex flex-col gap-2 lg:text-xl text-start md:text-start">

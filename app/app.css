@@ -3,12 +3,14 @@
 
 /* Variables */
 :root {
-  --color-txt-primary: #ffffff;
+  --color-txt-primary: #b6b6b6;
   --bg-primary: #000000;
   --bg-card-services: #090931;
 
   color: var(--color-txt-primary);
   background-color: var(--bg-primary);
+
+  color: var(--color-txt-primary)
 }
 
 /* Tus utilidades personalizadas */
@@ -24,4 +26,12 @@
   .bg-card-services {
     background-color: var(--bg-card-services);
   }
+}
+
+.card__service :nth-child(1), .card__service :nth-child(3) {
+  justify-self: end;
+}
+
+.card__service :nth-child(2), .card__service :nth-child(4) {
+  justify-self: start;
 }
